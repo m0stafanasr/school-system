@@ -13,7 +13,7 @@
     }
 
 p{
-    font-size: 2vmin;
+    font-size: 2hmin;
 }
 
 .main{
@@ -57,7 +57,7 @@ p{
     z-index: 0;
     opacity: 0;
     transition-duration: 1s;
-    font-family: cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
