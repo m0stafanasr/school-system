@@ -1,15 +1,3 @@
-var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    sliderPerView: 1,
-    spaceBetween: 0,
-    mousewheel: true,
-    pagination: {
-        el:'.swiper-pagination',
-        type: 'progressbar',
-    }
-}) 
-
-
 function showModal(){
     $("#exampleModal").modal()
     
@@ -29,7 +17,7 @@ $(document).ready(function(){
           $('.calendar-container').calendar();
         });
       $('.calendar-container').calendar({
-
+          
           // text for prev/next buttons
           prevButton: "Prev",
           nextButton: "Next",
@@ -71,3 +59,13 @@ $(document).ready(function(){
         
     });
 
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      sliderPerView: 1,
+      spaceBetween: 0,
+      mousewheel: true,
+      pagination: {
+          el:'.swiper-pagination',
+          type: 'progressbar',
+      }
+  }) 

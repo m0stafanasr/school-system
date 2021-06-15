@@ -7,36 +7,57 @@
 
 #mainbar{
     background-color: #77a59c;
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 101%;
     }
 
-    p{
-        font-size: 2vmin;
-    }
+p{
+    font-size: 2vmin;
+}
+
+.main{
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.footer-slide{
+    background-color: #79a098;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
 
 .footer{
     background-color: #79a098;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    color: #e3e3e3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.overflow-x{
+    overflow-x: hidden;
 }
 
 .news{
     align-content: center;
-    width: 96%;
-    height: 91%;
+    width: 100%;
+    height: 100%;
     background-color: #53bcc8;
     border-color: #53eeff;
     border-style: solid;
     border-width: 2px;
-    padding: 10px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    padding: 5px;
     z-index: 0;
     opacity: 0;
     transition-duration: 1s;
-    }
-
+    font-family: cursive;
+}
 
 
 .news:hover{
@@ -58,9 +79,7 @@
 
 
 
-#newss{
-    color: #888486;
-}
+
 
 #calendar{
     background-color: #30686e;
@@ -78,16 +97,16 @@
 .carousel-control-prev, .carousel-control-next{
     top: 60px;
     bottom: 60px;
-    width: 5%;
+    width: 3%;
     color: blue;
 }
 
 .carousel-control-prev:hover{
-    width: 10%;
+    width: 5%;
 }
 
 .carousel-control-next:hover{
-    width: 10%;
+    width: 5%;
 }
 
 .textboxin{
@@ -119,7 +138,8 @@
     text-align:center;
     transition: all 0.15s;
     }
-    #button:hover{
+
+#button:hover{
     text-shadow: 0 1 4em #3b8992;
     color:#90dae2;
     border-color:#FFFFFF;
@@ -140,6 +160,102 @@
     display: none;
 }
 
+.overflow-hidden{
+    overflow: hidden;
+}
+
+/*calendar*/
+.calendar-box {
+
+}
+
+.buttons-container {
+  cursor: pointer;
+}
+
+.week {
+  overflow: hidden;
+}
+
+.week.highlight {
+  background: #efefef;
+}
+
+/* weekend */
+.week .day:first-child, .week .day:last-child {
+  color: rgb(101, 150, 243);
+}
+
+/* sunday */
+.week .day:first-child {
+  color: red;
+}
+
+.day {
+  display: inline-block;
+  float: left;
+  width: 14.28%;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.day.disabled span {
+  color: #AAA;
+}
+
+/* vertical highlight */
+.week .day.highlight span {
+  /*color: blue;*/
+}
+
+.day.selected span {
+  /*background: orange;*/
+}
+
+.day.today span {
+  font-weight: bold;
+}
+
+.months-container.hidden, .weeks-container.hidden {
+  display: none;
+}
+
+.months-wrapper {
+  overflow: hidden;
+}
+
+.months-wrapper .month {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+.months-wrapper .month.one-third {
+  width: 33.33%;
+}
+
+.news-header{
+    color: #888486;
+    
+}
+
+.news-body{
+    margin-bottom: 30px;
+}
+
+.news-container{
+    background-image: url("../media/Summerstar-logo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
 /* slider */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap');
 
@@ -152,12 +268,9 @@
     text-align: center;
     font-size: 18px;
     background: #30686e;
+    display: block;
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -180,14 +293,14 @@
 .friends {
     width: 100%;
     height: 100vh;
-    padding: 0 80px;
+    padding: 0 50px;
 }
 
 .section_container {
-    width: 1170px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 }
 
@@ -204,11 +317,11 @@
 }
 
 .friends {
-    background-color: #000;
+    background-color: rgb(0, 45, 75);
 }
 
 .image {
-    width: 600px;
+    width: 800px;
 }
 
 .image > img {
@@ -265,3 +378,4 @@
     top: 25%;
     height: 50%;
 }
+
