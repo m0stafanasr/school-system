@@ -21,6 +21,9 @@ p{
     font-weight: bold;
 }
 
+.suggestions{
+    padding-top: 20px;
+}
 .footer-slide{
     background-color: #79a098;
     bottom: 0;
@@ -28,6 +31,9 @@ p{
     width: 100%;
 }
 
+.form{
+    padding-top: 5em;
+}
 .footer{
     background-color: #79a098;
     font-size: 14px;
@@ -38,7 +44,7 @@ p{
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0;
-    
+    align-content: flex-end;    
 }
 
 .overflow-x{

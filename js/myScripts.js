@@ -69,3 +69,7 @@ $(document).ready(function(){
           type: 'progressbar',
       }
   }) 
+
+  function myFunction() {
+    alert("thank you for your suggestion");
+  }
